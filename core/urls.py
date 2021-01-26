@@ -1,6 +1,7 @@
 from django.urls import path, include
-from core.views import *
+from . import views
 
 urlpatterns = [
     path('core/', include('core.urls')),
+    path('', views.Index, name='Index.html'),
 ]
